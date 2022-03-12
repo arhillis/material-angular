@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -12,7 +13,7 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { NewTaskFormComponent } from './components/new-task-form/new-task-form.component';
 import { AboutComponent } from './components/about/about.component';
 
-
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,11 @@ import { AboutComponent } from './components/about/about.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    MaterialModule
   ],
   exports: [],
   providers: [],
