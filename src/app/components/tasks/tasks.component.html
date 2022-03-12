@@ -1,0 +1,2 @@
+<app-new-task-form *ngIf="showAddTaskForm" (onAddItem)="addItem($event)"></app-new-task-form>
+<app-task-item *ngFor="let task of tasks" [task]="task" (onRemoveItem)="removeItem(task)" (onToggleReminder)="toggleReminder(task)"></app-task-item>
