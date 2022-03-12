@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,10 +12,7 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { NewTaskFormComponent } from './components/new-task-form/new-task-form.component';
 import { AboutComponent } from './components/about/about.component';
 
-const appRoutes: Routes = [
-  {path: '', component: TasksComponent},
-  {path: '/about', }
-]
+
 
 @NgModule({
   declarations: [
@@ -33,9 +29,8 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, {enableTracing: true})
   ],
-  exports: [RouterModule],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
