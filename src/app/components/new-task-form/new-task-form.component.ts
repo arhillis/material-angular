@@ -30,6 +30,8 @@ export class NewTaskFormComponent implements OnInit {
   onSubmit(){
     if(!this.text)
       alert('Please enter a task!');
+    
+    else{
 
     const newTask: Task = {
       text: this.text,
@@ -43,6 +45,8 @@ export class NewTaskFormComponent implements OnInit {
     this.reminder = false;
 
     this.uiService.toggleShowForm();
+
+    }
   }
 
 }

@@ -1,38 +1,27 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "text": "Schedule dental checkups",
-      "day": "Tomorrow",
-      "reminder": false,
-      "id": 6
-    },
-    {
-      "text": "Return Betty's casserole dish",
-      "day": "Mon @ 9:30am",
-      "reminder": false,
-      "id": 7
-    },
-    {
       "text": "Mow the lawn",
       "day": "Thurs @ 10am",
       "reminder": false,
       "id": 8
     },
     {
-      "text": "Put desk for sale on FB Marketplace",
-      "day": "any",
-      "id": 9
-    },
-    {
       "text": "Clean out bedroom closet",
       "day": "any",
       "id": 10
+    },
+    {
+      "text": "Return Betty's casserole dish",
+      "day": "Tomorrow",
+      "reminder": true,
+      "id": 12
+    },
+    {
+      "text": "Schedule dental checkups",
+      "day": "Mon @ 9:30am",
+      "reminder": false,
+      "id": 13
     }
   ]
 }

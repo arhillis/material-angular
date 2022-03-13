@@ -1,15 +1,17 @@
 <form (ngSubmit)="onSubmit()">
-    <div class="form-control">
-        <label for="text">Task</label>
-        <input type="text" name="text" id="text" [(ngModel)]="text">
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label for="text">Task</mat-label>
+            <input matInput type="text" name="text" id="text" [(ngModel)]="text">
+        </mat-form-field>
     </div>
-    <div class="form-control">
-        <label for="day">Day & Time</label>
-        <input type="text" name="day" id="day" [(ngModel)]="day">
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label for="day">Day</mat-label>
+            <input matInput type="text" name="day" id="day" [(ngModel)]="day">
+        </mat-form-field>
     </div>
-    <div class="form-control form-control-check">
-        <label for="reminder">Set reminder</label>
-        <input type="checkbox" name="reminder" id="reminder" [(ngModel)]="reminder">
-    </div>
-    <input type="submit" value="Add Task" class="btn btn-block">
+    <mat-checkbox name="reminder" id="reminder" [(ngModel)]="reminder">Set Reminder</mat-checkbox>
+    <!-- <input type="submit" value="Add Task" class="btn btn-block"> -->
+    <app-button text="Add Task" color="primary" class="btn-block"></app-button>
 </form>
